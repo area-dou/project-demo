@@ -1,0 +1,23 @@
+{
+  "id": "3128012",
+  "name": "shop-project",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10232786",
+      "name": "用户名",
+      "font_class": "yonghuming",
+      "unicode": "e78f",
+      "unicode_decimal": 59279
+    },
+    {
+      "icon_id": "11372676",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e8b2",
+      "unicode_decimal": 59570
+    }
+  ]
+}
