@@ -8,6 +8,10 @@ import Home from '../components/home.vue';
 import Welcome from '../components/welcome.vue';
 // 导入用户列表组件
 import Users from '../components/users/users.vue';
+// 导入权限列表组件
+import Rights from '../components/power/rights.vue';
+// 导入角色列表组件
+import Roles from '../components/power/roles.vue';
 
 Vue.use(VueRouter);
 
@@ -21,7 +25,12 @@ const routes = [
     // home的子组件
     children: [
       { path: '/welcome', component: Welcome },
-      { path: '/users', component: Users }
+      // 用户列表组件
+      { path: '/users', component: Users },
+      // 权限列表组件
+      { path: '/rights', component: Rights },
+      // 角色列表组件
+      { path: '/roles', component: Roles }
     ]
   }
 ];
