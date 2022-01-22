@@ -14,8 +14,7 @@
           <el-button type="primary" @click="addRoleDialogVisible = true">添加角色</el-button>
         </el-col>
       </el-row>
-    </el-card>
-    <!-- 角色列表 -->
+        <!-- 角色列表 -->
     <el-table :data="rolesList" border :stripe="true">
       <!-- 展开列 -->
       <el-table-column type="expand">
@@ -55,6 +54,7 @@
         </template>
       </el-table-column>
     </el-table>
+    </el-card>
     <!-- 分配权限对话框 -->
     <el-dialog title="分配权限" :visible.sync="setRightDialogVisible" width="50%" @close="closeSetRightsDialogVisible">
       <!-- 树形控件 -->

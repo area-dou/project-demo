@@ -20,8 +20,7 @@
           <el-button type="primary" @click="addDialogVisible = true">添加用户</el-button>
         </el-col>
       </el-row>
-    </el-card>
-    <!-- 用户列表区域 -->
+          <!-- 用户列表区域 -->
     <el-table :data="userList" :stripe="true" border style="width: 100%">
       <!-- 索引列 -->
       <el-table-column type="index"> </el-table-column>
@@ -51,6 +50,7 @@
     <!-- 分页区域 -->
     <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="queryInfo.pagenum" :page-sizes="[1, 2, 5, 10]" :page-size="queryInfo.pagesize" layout="total, sizes, prev, pager, next, jumper" :total="total">
     </el-pagination>
+    </el-card>
     <!-- 添加用户对话框 -->
     <el-dialog title="添加用户" :visible.sync="addDialogVisible" width="50%" @close="addDialogClose">
       <!-- 弹框内容主体区域 -->

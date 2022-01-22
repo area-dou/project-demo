@@ -6,6 +6,10 @@ import './plugins/element.js'
 import './assets/css/global.css'
 // 导入字体图标
 import './assets/fonts/iconfont.css'
+// 导入element Ui中的部分样式
+import 'element-ui/lib/theme-chalk/index.css'
+// 导入树形表格依赖项
+import TreeTable from 'vue-table-with-tree-grid'
 // 导入axios
 import axios from 'axios'
 // 配置请求的根路径
@@ -16,6 +20,8 @@ axios.interceptors.request.use((config) => {
   // 最后必须return config
   return config
 })
+// 全局注册树形表格组件
+Vue.component('tree-table', TreeTable)
 // axios挂载到原型对象上
 Vue.prototype.$http = axios
 

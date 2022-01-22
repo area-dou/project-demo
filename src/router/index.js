@@ -12,6 +12,8 @@ import Users from '../components/users/users.vue';
 import Rights from '../components/power/rights.vue';
 // 导入角色列表组件
 import Roles from '../components/power/roles.vue';
+// 导入商品分类组件
+import Cate from '../components/goods/category.vue'
 
 Vue.use(VueRouter);
 
@@ -30,7 +32,9 @@ const routes = [
       // 权限列表组件
       { path: '/rights', component: Rights },
       // 角色列表组件
-      { path: '/roles', component: Roles }
+      { path: '/roles', component: Roles },
+      // 商品分类组件
+      { path: '/categories', component: Cate }
     ]
   }
 ];
