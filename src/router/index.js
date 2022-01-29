@@ -13,7 +13,9 @@ import Rights from '../components/power/rights.vue';
 // 导入角色列表组件
 import Roles from '../components/power/roles.vue';
 // 导入商品分类组件
-import Cate from '../components/goods/category.vue'
+import Cate from '../components/goods/category.vue';
+// 导入商品参数组件
+import Params from '../components/goods/params.vue';
 
 Vue.use(VueRouter);
 
@@ -34,7 +36,9 @@ const routes = [
       // 角色列表组件
       { path: '/roles', component: Roles },
       // 商品分类组件
-      { path: '/categories', component: Cate }
+      { path: '/categories', component: Cate },
+      // 商品参数组件
+      { path: '/params', component: Params }
     ]
   }
 ];
