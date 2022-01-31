@@ -38,7 +38,12 @@ import {
   Cascader,
   Alert,
   Tabs,
-  TabPane
+  TabPane,
+  Step,
+  Steps,
+  checkboxGroup,
+  checkbox,
+  Upload
 } from 'element-ui'
 
 Vue.use(Button)
@@ -71,6 +76,11 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Step)
+Vue.use(Steps)
+Vue.use(checkboxGroup)
+Vue.use(checkbox)
+Vue.use(Upload)
 // 全局挂载提示框组件
 Vue.prototype.$message = Message;
 Vue.prototype.$confirm = MessageBox.confirm
