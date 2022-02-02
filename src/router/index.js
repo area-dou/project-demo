@@ -20,6 +20,8 @@ import Params from '../components/goods/params.vue';
 import GoodsList from '../components/goods/list.vue';
 // 导入添加商品组件
 import AddGoods from '../components/goods/add.vue'
+// 导入商品管理组件
+import Order from '../components/order/order.vue'
 
 Vue.use(VueRouter);
 
@@ -45,8 +47,10 @@ const routes = [
       { path: '/params', component: Params },
       // 商品列表组件
       { path: '/goods', component: GoodsList },
-      // 添加商品列表组件
-      { path: '/goods/add', component: AddGoods }
+      // 注册商品列表组件
+      { path: '/goods/add', component: AddGoods },
+      // 注册订单管理组件
+      { path: '/orders', component: Order }
     ]
   }
 ];
