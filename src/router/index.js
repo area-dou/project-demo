@@ -22,6 +22,8 @@ import GoodsList from '../components/goods/list.vue';
 import AddGoods from '../components/goods/add.vue'
 // 导入商品管理组件
 import Order from '../components/order/order.vue'
+// 导入数据报表组件
+import Report from '../components/report/report.vue'
 
 Vue.use(VueRouter);
 
@@ -50,7 +52,9 @@ const routes = [
       // 注册商品列表组件
       { path: '/goods/add', component: AddGoods },
       // 注册订单管理组件
-      { path: '/orders', component: Order }
+      { path: '/orders', component: Order },
+      // 注册数据报表组件
+      { path: '/reports', component: Report }
     ]
   }
 ];
